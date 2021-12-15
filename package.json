@@ -1,0 +1,26 @@
+{
+  "name": "subdata",
+  "version": "1.0.0",
+  "description": "a command line tool for generating fake data for the `substrate-based` chain",
+  "main": "src/index.js",
+  "bin": {
+    "subdata": "src/index.js"
+  },
+  "keywords": [
+    "CLI",
+    "substrate",
+    "testing",
+    "mock"
+  ],
+  "bugs": {
+    "url": "https://github.com/bingryan/subdata/issues"
+  },
+  "homepage": "https://github.com/bingryan/subdata#readme",
+  "author": "bingryan",
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot/api": "^6.12.1",
+    "chance": "^1.1.8",
+    "commander": "^8.3.0"
+  }
+}

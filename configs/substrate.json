@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "endpoint": "ws://127.0.0.1:9944",
+    "sudo": {
+      "uri": "//Alice",
+      "ss58Format": 42,
+      "type": "sr25519"
+    },
+    "datatype": {
+      "website": [
+        "google.com",
+        "github.com"
+      ],
+      "fee": [
+        1000000000000000,
+        1000000000000000,
+        1000000000000000
+      ],
+      "newReserved": [
+        10,
+        10,
+        10
+      ],
+      "account": [
+        "5HbK1fbNukqiubLiYRGFnvGeyLsJujW7NJLQLxvToR7Umn2Y",
+        "5H8x5qPFqszpGnZkP2s1dpb94hJXh5fcvvFMLgk8UH7ZUPHy",
+        "5HmRTVJejhBycRKE9eP8fUVdmj5yd6CFsU8FknyxEyHSYKg8"
+      ],
+      "nested_accounting": [
+        {
+          "firstName": "riwen",
+          "lastName": "Doe",
+          "age": 23
+        },
+        {
+          "firstName": "ryan",
+          "lastName": "Smith",
+          "age": 32
+        }
+      ]
+    }
+  },
+  "call": {
+    "balances": {
+      "setBalance": {
+        "size": 100,
+        "params": {
+          "who": "account",
+          "newFree": "fee",
+          "newReserved": "newReserved"
+        }
+      }
+    }
+  }
+}
